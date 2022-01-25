@@ -1,0 +1,40 @@
+
+
+<div class="card">
+    <div class="card-body">
+       <p class="card-title">Manage Skills</p>
+       <div class="table-responsive">
+          <div id="recent-purchases-listing_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">
+             <div class="row">
+                <div class="col-sm-12 col-md-6"></div>
+                <div class="col-sm-12 col-md-6"></div>
+             </div>
+             <div class="row">
+                <div class="col-sm-12">
+                   <table id="recent-purchases-listing" class="table dataTable no-footer" role="grid">
+                      <thead>
+                         <tr role="row">
+                            <th class="sorting_asc" tabindex="0" aria-controls="recent-purchases-listing" rowspan="1" colspan="1" style="width: 169.05px;" aria-sort="ascending" aria-label="Name: activate to sort column descending">Nume</th>
+                            <th class="sorting" tabindex="0" aria-controls="recent-purchases-listing" rowspan="1" colspan="1" style="width: 216.383px;" aria-label="Status report: activate to sort column ascending">Descriere</th>
+                         </tr>
+                      </thead>
+                      <tbody>
+                         <tr role="row" class="odd" *ngFor="let skill of skills">
+                            <td class="sorting_1">{{skill.skillName}}</td>
+                            <td>{{skill.skillDescription}}</td>
+                         </tr>
+                      </tbody>
+                   </table>
+                </div>
+             </div>
+             <div class="row">
+                <div class="col-sm-12 col-md-5"></div>
+                <div class="col-sm-12 col-md-7"></div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div></div>
+ </div>
+ 
+ 

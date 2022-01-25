@@ -1,0 +1,42 @@
+<div class="card">
+    <div class="card-body">
+       <p class="card-title">Manage countries</p>
+       <div class="table-responsive">
+          <div id="recent-purchases-listing_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">
+             <div class="row">
+                <div class="col-sm-12 col-md-6"></div>
+                <div class="col-sm-12 col-md-6"></div>
+             </div>
+             <div class="row">
+                <div class="col-sm-12">
+                   <table id="recent-purchases-listing" class="table dataTable no-footer" role="grid">
+                      <thead>
+                         <tr role="row">
+                            <th class="sorting_asc" tabindex="0" aria-controls="recent-purchases-listing" rowspan="1" colspan="1" style="width: 169.05px;" aria-sort="ascending" aria-label="Name: activate to sort column descending">Name</th>
+                            <th class="sorting" tabindex="0" aria-controls="recent-purchases-listing" rowspan="1" colspan="1" style="width: 216.383px;" aria-label="Status report: activate to sort column ascending">Population</th>
+                            <th class="sorting" tabindex="0" aria-controls="recent-purchases-listing" rowspan="1" colspan="1" style="width: 152.15px;" aria-label="Office: activate to sort column ascending">Surface</th>
+                            <th class="sorting" tabindex="0" aria-controls="recent-purchases-listing" rowspan="1" colspan="1" style="width: 74.0333px;" aria-label="Price: activate to sort column ascending">Guvernment</th>
+                         </tr>
+                      </thead>
+                      <tbody>
+                         <tr role="row" class="odd" *ngFor="let country of countries">
+                            <td class="sorting_1">{{country.name}}</td>
+                            <td>{{country.population}}</td>
+                            <td>{{country.surface}}</td>
+                            <td>{{country.legislator}}</td>
+                         </tr>
+                      </tbody>
+                   </table>
+                </div>
+             </div>
+             <div class="row">
+                <div class="col-sm-12 col-md-5"></div>
+                <div class="col-sm-12 col-md-7"></div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div></div>
+ </div>
+ 
+ 
